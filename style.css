@@ -2,6 +2,15 @@ body{
     margin: 0;
 }
 
+/*Main content with Background image*/
+.main{
+
+  background-image: url(/img/Astrophotography/img_0159.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
 
 img{
   height: 100%;
@@ -25,6 +34,29 @@ img{
     flex-direction: row;
     align-items: center;
 }
+
+/*Hamburger menu*/
+
+.menu-icon {
+  display: grid;
+  place-items: center;
+  height: 15px;
+  width: 20px;
+  cursor: pointer;
+
+}
+
+.menu-icon span {
+  width: 20px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  display: block;
+}
+
+.line{
+width: 100%;
+}
+
 .menu{
     display: flex;
     margin-left: 20px;
@@ -39,6 +71,7 @@ img{
     font-size: 12px;
 }
 
+/*side nav*/
 
 .sidenav {
   height: 100%;
@@ -81,21 +114,35 @@ img{
 .container{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
-  height: 80vw;
-  margin-top: 120px;
+  height: 60vw;
 
 }
 
-.content{
+.main-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  opacity: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.main-content h1{
+  color: darkslategray;
+  font-size: 50px;
 }
 
 
+.container p{
+  color: darkslategray;
+  font-size: 30px;
+}
 
 
 
