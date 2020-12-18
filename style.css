@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'lato';
 }
 
 /*Main content with Background image*/
@@ -8,6 +9,8 @@ body{
   background-image: url(/img/Astrophotography/img_0159.jpg);
   background-size: cover;
   background-position: center;
+  width: 100vw;
+  height: 100vh;
 
 }
 
@@ -126,22 +129,23 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(238, 238, 238);
   border-radius: 10px;
   opacity: 80%;
   max-width: 800px;
+  width: 60vw;
   text-align: center;
 }
 
 .main-content h1{
-  color: darkslategray;
-  font-size: 50px;
+  color: white;
+  font-size: 60px;
 }
 
 
 .container p{
-  color: darkslategray;
-  font-size: 30px;
+  color: white;
+  font-size: 40px;
+  t
 }
 
 
