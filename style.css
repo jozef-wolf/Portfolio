@@ -7,18 +7,14 @@ body{
 /*Main content with Background image*/
 .main{
 
-  background-image: url(/img/IMG_0007j.jpg);
+  background-image: url(/img/MainPhoto.jpg);
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
 
 }
 
-
-img{
-  height: 100%;
-  width: 100%;
-}
 
 /*Fixed Header bar start*/
 
@@ -43,14 +39,14 @@ img{
 .menu-icon {
   display: grid;
   place-items: center;
-  height: 15px;
-  width: 20px;
+  height: 35px;
+  width: 30px;
   cursor: pointer;
 
 }
 
 .menu-icon span {
-  width: 20px;
+  width: 40px;
   height: 2px;
   background: rgb(0, 0, 0);
   display: block;
@@ -64,14 +60,6 @@ width: 100%;
     display: flex;
     margin-left: 20px;
     max-width: 400px;
-}
-
-.name{
-    display: flex;
-    margin-left: 20px;
-    max-width: 400px;
-    color: rgb(58, 58, 45);
-    font-size: 12px;
 }
 
 /*side nav*/
@@ -132,27 +120,26 @@ width: 100%;
   border-radius: 10px;
   opacity: 80%;
   max-width: 800px;
-  width: 60vw;
   text-align: center;
-  margin-top: 120px;
 }
 
 
 
 .main-content h1{
-  color: rgb(0, 0, 0);
-  font-size: 80px;
-  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 72px;
+  margin-bottom: 0;
 }
 
-.container .top{
+.name{
   text-transform: uppercase;
-  color: rgb(83, 83, 83);
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
-.main-content p{
-  font-weight: 700;
+.story{
+  font-size: 20px;
+  color: white;
 }
 
 i:hover{
@@ -167,6 +154,26 @@ i:hover{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+@media (max-width: 768px){
+  .main-content h1{
+    
+    font-size: 30px;
+    
+  }
+  
+  .name{
+   
+    
+  }
+  
+  .story{
+    font-size: 14px;
+    
+  }
+  
+}
+
 /*Fixed footer*/
 .footer{
     position: fixed;
@@ -178,7 +185,7 @@ i:hover{
     text-align: left;
     border-top: 1px solid rgb(58, 58, 45);
     background-color: white;
-
+    font-size: 22px;
   }
 
 .footer p{
