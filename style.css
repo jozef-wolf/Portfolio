@@ -11,13 +11,13 @@ body{
 
 .header{
     position: fixed;
-    z-index: 901;
+    z-index: 10001;
     top: 0;
     right: 0;
     left: 0;
     top: 0;
     background-color: #fff;  
-    height: 80px;
+    height: 60px;
     width: 100vw;
     border-bottom: 1px solid rgb(58, 58, 45);
     display: flex;
@@ -116,7 +116,7 @@ section:before{
 }
 
 section img:nth-of-type(2){
-  opacity: 10%;
+  opacity: 20%;
 }
 
 section:after{
@@ -220,6 +220,36 @@ i:hover{
 
 
 /*Media queries*/
+@media (max-width: 1600px){
+#text{
+  font-size: 70px;
+}
+#text > small{
+  font-size: 20px;
+}
+
+}
+
+@media (max-width: 768px){
+  #text{
+    font-size: 46px;
+  }
+  #text > small{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px){
+  #text{
+    margin-left: 15vw;
+    font-size: 32px;
+  }
+  #text > small{
+    margin-right: 15vw;
+    font-size: 12px;
+  }
+  
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -232,10 +262,10 @@ i:hover{
     font-size: 30px;
     
   }
-  
-  .name{
-   
-    
+
+  .footer p{
+    height: 30px;
+    font-size: 14px;
   }
   
   .story{
@@ -248,7 +278,7 @@ i:hover{
 /*Fixed footer*/
 .footer{
     position: fixed;
-    z-index: 901;
+    z-index: 10001;
     left: 0;
     bottom: 0;
     width: 100%;
