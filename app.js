@@ -12,7 +12,7 @@ function closeNav() {
 
 let bg = document.getElementById("bg");
 let earth = document.getElementById("earth");
-let dune = document.getElementById("dune");
+let mountains = document.getElementById("mountains");
 let text = document.getElementById("text");
 
 window.addEventListener('scroll', function () {
@@ -21,7 +21,7 @@ window.addEventListener('scroll', function () {
     bg.style.top = value * 0.5 + 'px';
     earth.style.left = -value * 0.5 + 'px';
     earth.style.top = -value * 0.15 + 'px';
-    dune.style.top = value * 0.15 + 'px';
+    mountains.style.top = value * 0.15 + 'px';
     text.style.top = value * 1 + 'px';
 
 })

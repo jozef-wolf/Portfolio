@@ -109,6 +109,7 @@ section{
   align-items: center;
 }
 
+/*
 section:before{
   content:  '';
   position: absolute;
@@ -118,7 +119,7 @@ section:before{
   background: linear-gradient(to top, white, transparent);
   z-index: 10000;
 }
-
+*/
 section img:nth-of-type(2){
   opacity: 20%;
 }
@@ -144,7 +145,7 @@ section img{
 
 }
 
-#dune{
+#mountains{
   z-index: 2;
 }
 
