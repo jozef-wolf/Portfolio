@@ -232,21 +232,29 @@ i:hover{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
   background: url(/img/FN6A9987.JPG);
   background-size: cover;
-  height: 50vh;
+  height: 400px;
   color: white;
   margin-top: 4vh;
-  border: none;
+  
+}
+
+.skills i{
+  padding: 10px;
 }
 
 .skills p{
+  text-align: center;
   font-size: 40%;
 }
 
-
+.first, .second{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 40vw;
+}
 
 /*Media queries*/
 
@@ -289,7 +297,9 @@ text-align: center;
     text-align: center;
     font-size: 10px;
   }
-  
+ 
+  .skills i{
+    font-size: 50px;
 }
 
 @media screen and (max-height: 450px) {
