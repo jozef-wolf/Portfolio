@@ -17,7 +17,7 @@ body{
     left: 0;
     top: 0;
     background-color: #fff;  
-    height: 100px;
+    height: 80px;
     width: 100vw;
     border-bottom: 1px solid rgb(58, 58, 45);
     display: flex;
@@ -95,7 +95,7 @@ width: 100%;
 
 
 section{
-  margin-top: 100px;
+  margin-top: 0px;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -110,13 +110,13 @@ section:before{
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 100px;
+  height: 40px;
   background: linear-gradient(to top, white, transparent);
   z-index: 10000;
 }
 
 section img:nth-of-type(2){
-  opacity: 15%;
+  opacity: 10%;
 }
 
 section:after{
@@ -162,6 +162,10 @@ section img{
   display: flex;
   justify-content: center;
 }
+
+/*arrow*/
+
+
 
 /*container*/
 
@@ -253,6 +257,8 @@ i:hover{
     border-top: 1px solid rgb(58, 58, 45);
     background-color: white;
     font-size: 22px;
+    font-weight: bold;
+    height: 50px;
   }
 
 .footer p{
