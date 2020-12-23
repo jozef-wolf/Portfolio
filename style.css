@@ -97,7 +97,7 @@ width: 100%;
 }
 
 /*underline menu hover effect*/
-a {
+#mySidenav a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -107,7 +107,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+#mySidenav a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -119,7 +119,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+#mySidenav a:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -211,8 +211,14 @@ section img{
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  width: 100vw;
+  width: 80vw;
   height: 50vh;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.avatar{
+  margin: 5px;
 }
 
 .content-about-me{
@@ -233,13 +239,13 @@ section img{
 }
 
 .name{
-  font-size: 100%;
+  font-size: 18px;
 }
 
 .content-text{
   display: flex;
   justify-content: center;
-  font-size: 90%;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: left;
@@ -264,7 +270,7 @@ i:hover{
   background: url(/img/FN6A9987.JPG);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   color: white;
   margin-top: 4vh;
   font-size: 24px;
@@ -309,10 +315,24 @@ i:hover{
 }
 
 .contact-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: 5vh;
   text-align: center;
   font-size: 18px;
   font-weight: none;
+}
+
+.contact-text a{
+  color: #383838;
+  text-decoration: none;
+}
+
+.contact-text a:hover{
+  cursor: pointer;
+  color: rgb(100, 90, 57);
+  font-size: 110%;
 }
 
 /*Fixed footer*/
