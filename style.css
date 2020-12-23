@@ -4,6 +4,7 @@ body{
     font-family: 'Lato', sans-serif;
     width: 100vw;
     margin: 0;
+    color: #383838;
 }
 
 
@@ -247,7 +248,6 @@ section img{
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
   text-align: left;
 }
 
@@ -269,7 +269,8 @@ i:hover{
   flex-wrap: wrap;
   background: url(/img/FN6A9987.JPG);
   background-size: cover;
-  width: 100%;
+  margin-left: 5vw;
+  margin-right: 8vw;
   height: 80vh;
   color: white;
   margin-top: 4vh;
@@ -345,7 +346,6 @@ i:hover{
   left: 0;
   bottom: 0;
   width: 100%;
-  color: rgb(0, 0, 0);
   text-align: left;
   background-color: white;
   opacity: 50%;
