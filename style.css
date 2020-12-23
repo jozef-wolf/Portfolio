@@ -41,6 +41,7 @@ body{
   height: 2px;
   background: rgb(0, 0, 0);
   display: block;
+  opacity: 50%;
 }
 
 .line{
@@ -66,7 +67,6 @@ width: 100%;
   border-right: 1px solid rgb(58, 58, 45); 
   overflow-x: hidden;
   transition: 1s;
-  padding-top: 60px;
   text-align:center;
   opacity: 80%;
   display: flex;
@@ -138,7 +138,8 @@ section{
   align-items: center;
 }
 
-/*
+/* bottom photo linear-transparent
+
 section:before{
   content:  '';
   position: absolute;
@@ -208,6 +209,7 @@ section img{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   width: 100vw;
   height: 50vh;
@@ -227,18 +229,17 @@ section img{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  font-size: 22px;
   width: 100%;
 }
 
 .name{
-  font-size: 18px;
+  font-size: 100%;
 }
 
 .content-text{
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  font-size: 90%;
   font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: left;
@@ -294,14 +295,47 @@ i:hover{
 
 .contact{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 10vh;
+  align-items: center;
   height: 50vh;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.content-content{
-display: flex;
-flex-direction: column;
+.contact-content{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-text{
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 18px;
+  font-weight: none;
+}
+
+/*Fixed footer*/
+
+.footer{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  background-color: white;
+  opacity: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.footer p{
+margin: 0px 0px 0px 20px;
 }
 
 /*Media queries*/
@@ -323,6 +357,25 @@ flex-direction: column;
   #text > small{
     font-size: 14px;
   }
+
+  .sidenav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidenav a{
+    font-size: 100%;
+  }
+
+  .content-about-me{
+font-size: 18px;
+  }
+  .footer{
+    height: 30px;
+    font-size: 10px;
+  }
+ 
 }
 
 @media (max-width: 600px){
@@ -334,7 +387,14 @@ text-align: center;
     text-align: center;
     font-size: 12px;
   }
-  
+
+  .menu-icon {
+    height: 20px;
+    width: 5px;
+  }
+  .menu-icon span {
+    width: 25px;
+  }
 }
 @media (max-width: 500px){
   #text{
@@ -346,8 +406,14 @@ text-align: center;
     font-size: 10px;
   }
  
-  .skills i{
-    font-size: 50px;
+  .skills{
+    font-size: 10px;
+  }
+
+  .title{
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (max-height: 450px) {
@@ -355,38 +421,4 @@ text-align: center;
   .sidenav a {font-size: 18px;}
 }
 
-@media (max-width: 768px){
-  
-  .footer p{
-    height: 30px;
-    font-size: 14px;
-  }
-  
-  .story{
-    font-size: 14px;
-    
-  }
-  
-}
 
-/*Fixed footer*/
-
-.footer{
-    display: flex;
-    position: fixed;
-    z-index: 10001;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    border-top: 1px solid rgb(58, 58, 45);
-    background-color: white;
-    font-size: 22px;
-    font-weight: bold;
-    height: 100px;
-  }
-
-.footer p{
-  margin: 0px 0px 0px 20px;
-  }
