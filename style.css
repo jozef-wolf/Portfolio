@@ -1,29 +1,27 @@
-body{
-    background: white;
-    min-height: 1500px;
-    font-family: 'Lato', sans-serif;
-    width: 100vw;
-    margin: 0;
-    color: #383838;
+body {
+  background: white;
+  min-height: 1500px;
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  margin: 0;
+  color: #383838;
 }
-
-
 
 /*Fixed Header bar start*/
 
-.header{
-    position: fixed;
-    z-index: 10001;
-    top: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-color: transparent;  
-    height: 60px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.header {
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*Hamburger menu*/
@@ -34,7 +32,6 @@ body{
   height: 35px;
   width: 30px;
   cursor: pointer;
-
 }
 
 .menu-icon span {
@@ -43,16 +40,17 @@ body{
   background: rgb(0, 0, 0);
   display: block;
   opacity: 50%;
+  box-shadow: white 1px 1px 1px 1px;
 }
 
-.line{
-width: 100%;
+.line {
+  width: 100%;
 }
 
-.menu{
-    display: flex;
-    margin-left: 20px;
-    max-width: 400px;
+.menu {
+  display: flex;
+  margin-left: 20px;
+  max-width: 400px;
 }
 
 /*side nav*/
@@ -65,10 +63,10 @@ width: 100%;
   top: 0;
   left: 0;
   background-color: rgb(243, 243, 243);
-  border-right: 1px solid rgb(58, 58, 45); 
+  border-right: 1px solid rgb(58, 58, 45);
   overflow-x: hidden;
   transition: 1s;
-  text-align:center;
+  text-align: center;
   opacity: 80%;
   display: flex;
   justify-content: center;
@@ -85,7 +83,7 @@ width: 100%;
   font-weight: 600;
 }
 
-.sidenav a:hover{
+.sidenav a:hover {
   color: black;
 }
 
@@ -98,17 +96,18 @@ width: 100%;
 }
 
 /*underline menu hover effect*/
+
 #mySidenav a {
   color: #383838;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-#mySidenav a:after {    
+
+#mySidenav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -120,15 +119,15 @@ width: 100%;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-#mySidenav a:hover:after { 
-  width: 100%; 
-  left: 0; 
+
+#mySidenav a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*parallax scrolling effect*/
 
-
-section{
+section {
   margin-top: 0px;
   position: relative;
   width: 100vw;
@@ -151,12 +150,13 @@ section:before{
   z-index: 10000;
 }
 */
-section img:nth-of-type(2){
+
+section img:nth-of-type(2) {
   opacity: 15%;
 }
 
-section:after{
-  content:  '';
+section:after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +165,7 @@ section:after{
   z-index: 10000;
 }
 
-section img{
+section img {
   position: absolute;
   top: 0;
   left: 0;
@@ -173,14 +173,13 @@ section img{
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-
 }
 
-#mountains{
+#mountains {
   z-index: 2;
 }
 
-#text{
+#text {
   position: relative;
   color: white;
   font-size: 10em;
@@ -190,7 +189,7 @@ section img{
   text-align: center;
 }
 
-#text > small{
+#text>small {
   font-size: 34px;
   z-index: 1;
   font-weight: 300;
@@ -203,10 +202,9 @@ section img{
 
 /*arrow*/
 
-
 /*content story*/
 
-.content{
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -218,32 +216,32 @@ section img{
   margin-left: 20px;
 }
 
-.avatar{
+.avatar {
   margin: 5px;
 }
 
-.content-about-me{
+.content-about-me {
   font-size: 24px;
   font-weight: bold;
 }
 
-.line{
-    border-top: 1px solid grey;
-    width: 7vw;
+.line {
+  border-top: 1px solid grey;
+  width: 7vw;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
 }
 
-.name{
+.name {
   font-size: 18px;
 }
 
-.content-text{
+.content-text {
   display: flex;
   justify-content: center;
   font-size: 16px;
@@ -251,35 +249,32 @@ section img{
   text-align: left;
 }
 
-i{
- margin: 10px;
+i {
+  margin: 10px;
 }
 
-i:hover{
+i:hover {
   cursor: pointer;
-  transform:scale(1.3);
+  transform: scale(1.3);
 }
 
 /*skills section*/
 
-
-.skills{
+.skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background: url(/img/parallax/underground.jpg);
   background-size: cover;
-  margin-left: 5vw;
-  margin-right: 8vw;
+  width: 100vw;
   height: 100vh;
   color: white;
   margin-top: 4vh;
   font-size: 24px;
   text-align: center;
-  
 }
 
-.skill_box{
+.skill_box {
   width: 50%;
   height: 50%;
   display: flex;
@@ -288,11 +283,11 @@ i:hover{
   align-items: center;
 }
 
-.skills i{
+.skills i {
   padding: 10px;
 }
 
-.title{
+.title {
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -300,7 +295,7 @@ i:hover{
 
 /*photography gallery section*/
 
-.gallery{
+.gallery {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,44 +304,30 @@ i:hover{
   margin-left: 5vw;
   margin-right: 8vw;
   margin-top: 4vh;
-  
 }
 
 .container {
-  position: relative;
   width: 50%;
   max-width: 420px;
   margin: 20px;
 }
 
-.image{
-  display: block;
+.image {
   width: 100%;
   height: auto;
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
+.gallery .container:last-child .image{
+  border: solid 1px grey;
 }
 
 /*contact conainer*/
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -356,12 +337,12 @@ i:hover{
   font-weight: bold;
 }
 
-.contact-content{
+.contact-content {
   font-size: 24px;
   font-weight: bold;
 }
 
-.contact-text{
+.contact-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -371,12 +352,12 @@ i:hover{
   font-weight: none;
 }
 
-.contact-text a{
+.contact-text a {
   color: #383838;
   text-decoration: none;
 }
 
-.contact-text a:hover{
+.contact-text a:hover {
   cursor: pointer;
   color: rgb(100, 90, 57);
   font-size: 110%;
@@ -384,7 +365,7 @@ i:hover{
 
 /*Fixed footer*/
 
-.footer{
+.footer {
   display: flex;
   align-items: center;
   position: fixed;
@@ -398,63 +379,56 @@ i:hover{
   font-size: 14px;
   font-weight: bold;
   height: 30px;
-
 }
 
-.footer p{
-margin: 0px 0px 0px 20px;
+.footer p {
+  margin: 0px 0px 0px 20px;
 }
 
 /*Media queries*/
 
-@media (max-width: 1600px){
-#text{
-  font-size: 70px;
-}
-#text > small{
-  font-size: 20px;
+@media (max-width: 1600px) {
+  #text {
+    font-size: 70px;
+  }
+  #text>small {
+    font-size: 20px;
+  }
 }
 
-}
-
-@media (max-width: 768px){
-  #text{
+@media (max-width: 768px) {
+  #text {
     font-size: 46px;
   }
-  #text > small{
+  #text>small {
     font-size: 14px;
   }
-
-  .sidenav{
+  .sidenav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  .sidenav a{
+  .sidenav a {
     font-size: 100%;
   }
-
-  .content-about-me{
-font-size: 18px;
+  .content-about-me {
+    font-size: 18px;
   }
-  .footer{
+  .footer {
     height: 30px;
     font-size: 10px;
   }
- 
 }
 
-@media (max-width: 600px){
-  #text{
-text-align: center;
+@media (max-width: 600px) {
+  #text {
+    text-align: center;
     font-size: 32px;
   }
-  #text > small{
+  #text>small {
     text-align: center;
     font-size: 12px;
   }
-
   .menu-icon {
     height: 20px;
     width: 5px;
@@ -463,29 +437,29 @@ text-align: center;
     width: 25px;
   }
 }
-@media (max-width: 500px){
-  #text{
+
+@media (max-width: 500px) {
+  #text {
     text-align: center;
     font-size: 24px;
   }
-  #text > small{
+  #text>small {
     text-align: center;
     font-size: 10px;
   }
- 
-  .skills{
+  .skills {
     font-size: 10px;
   }
-
-  .title{
+  .title {
     font-size: 18px;
   }
-
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
-
