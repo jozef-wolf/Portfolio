@@ -310,6 +310,7 @@ i:hover {
   width: 50%;
   max-width: 420px;
   margin: 20px;
+  text-transform: uppercase;
 }
 
 .image {
