@@ -39,7 +39,7 @@ body{
 
 .menu-icon span {
   width: 40px;
-  height: 2px;
+  height: 3px;
   background: rgb(0, 0, 0);
   display: block;
   opacity: 50%;
@@ -213,7 +213,7 @@ section img{
   flex-wrap: wrap;
   align-items: center;
   width: 80vw;
-  height: 50vh;
+  height: 100vh;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -267,11 +267,11 @@ i:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: url(/img/varques.jpeg);
+  background: url(/img/parallax/underground.jpg);
   background-size: cover;
   margin-left: 5vw;
   margin-right: 8vw;
-  height: 80vh;
+  height: 100vh;
   color: white;
   margin-top: 4vh;
   font-size: 24px;
@@ -305,7 +305,7 @@ i:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   font-size: 24px;
   font-weight: bold;
 }
@@ -321,7 +321,7 @@ i:hover{
   justify-content: space-evenly;
   margin-top: 5vh;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: none;
 }
 
@@ -349,9 +349,10 @@ i:hover{
   text-align: left;
   background-color: white;
   opacity: 50%;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  height: 50px;
+  height: 30px;
+
 }
 
 .footer p{
