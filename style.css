@@ -29,18 +29,18 @@ body {
 .menu-icon {
   display: grid;
   place-items: center;
-  height: 35px;
+  height: 30px;
   width: 30px;
   cursor: pointer;
 }
 
 .menu-icon span {
-  width: 40px;
-  height: 3px;
+  width: 35px;
+  height: 2px;
   background: rgb(0, 0, 0);
   display: block;
   opacity: 50%;
-  box-shadow: white 1px 1px 1px 1px;
+  box-shadow: white 0.5px 0.5px 0.5px 0.5px;
 }
 
 .menu-icon .line {
@@ -56,7 +56,7 @@ body {
 /*side nav*/
 
 .sidenav {
-  height: 10%;
+  height: 7vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -103,7 +103,6 @@ body {
   text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
-  padding: 15px 20px;
   position: relative;
 }
 
@@ -123,10 +122,6 @@ body {
 #mySidenav a:hover:after {
   width: 100%;
   left: 0;
-}
-
-#mySidenav a:hover {
-  transform: scale(1.1);
 }
 
 /*parallax scrolling effect*/
