@@ -1,11 +1,11 @@
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.height = "10%";
 }
 
 /* Close/hide the sidenav */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.height = "0";
 }
 
 /*Parallax scrolling effect*/

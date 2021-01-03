@@ -43,7 +43,7 @@ body {
   box-shadow: white 1px 1px 1px 1px;
 }
 
-.line {
+.menu-icon .line {
   width: 100%;
 }
 
@@ -56,8 +56,8 @@ body {
 /*side nav*/
 
 .sidenav {
-  height: 100%;
-  width: 0;
+  height: 10%;
+  width: 100vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -67,7 +67,7 @@ body {
   overflow-x: hidden;
   transition: 1s;
   text-align: center;
-  opacity: 80%;
+  opacity: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 14px;
   color: #383838;
   display: block;
   transition: 0.3s;
@@ -90,9 +90,9 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 5vw;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 7vw;
 }
 
 /*underline menu hover effect*/
@@ -112,7 +112,7 @@ body {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: rgb(100, 90, 57);
@@ -123,6 +123,11 @@ body {
 #mySidenav a:hover:after {
   width: 100%;
   left: 0;
+}
+
+#mySidenav a:hover{
+  transform: scale(1.1);
+  
 }
 
 /*parallax scrolling effect*/
@@ -138,7 +143,7 @@ section {
   align-items: center;
 }
 
-/* bottom photo linear-transparent
+/* bottom photo linear-transparent*/
 
 section:before{
   content:  '';
@@ -149,7 +154,7 @@ section:before{
   background: linear-gradient(to top, white, transparent);
   z-index: 10000;
 }
-*/
+
 
 section img:nth-of-type(2) {
   opacity: 15%;
@@ -227,7 +232,7 @@ section img {
 
 .line {
   border-top: 1px solid grey;
-  width: 7vw;
+  width: 100px;
 }
 
 .icons {
@@ -322,7 +327,7 @@ i:hover {
   text-align: center;
 }
 
-.gallery .container:last-child .image{
+.gallery .container:last-child .image {
   border: solid 1px grey;
 }
 
@@ -376,10 +381,10 @@ i:hover {
   width: 100%;
   text-align: left;
   background-color: white;
-  opacity: 50%;
-  font-size: 14px;
+  opacity: 80%;
+  font-size: 12px;
   font-weight: bold;
-  height: 30px;
+  height: 25px;
 }
 
 .footer p {
@@ -405,13 +410,22 @@ i:hover {
     font-size: 14px;
   }
   .sidenav {
-    flex-direction: column;
-    justify-content: center;
+    /*flex-direction: column;
+    
     align-items: center;
+    */
+    justify-content: space-evenly;
+  
   }
-  .sidenav a {
-    font-size: 100%;
+  #mySidenav a {
+    font-size: 12px;
+    padding: 2px;
   }
+
+  #mySidenav a:first-child{
+    font-size: 20px;
+  }
+
   .content-about-me {
     font-size: 18px;
   }
@@ -456,11 +470,10 @@ i:hover {
   }
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
+@media screen and (max-width: 450px) {
+  
+  #mySidenav a {
+    font-size: 8px;
+    padding: 7px;
   }
 }
