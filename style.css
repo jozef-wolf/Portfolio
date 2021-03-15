@@ -1,8 +1,7 @@
 body {
   background: white;
   min-height: 1500px;
-  font-family: 'Lato', sans-serif;
-  width: 100vw;
+  font-family: "Lato", sans-serif;
   margin: 0;
   color: #383838;
 }
@@ -18,7 +17,7 @@ body {
   top: 0;
   background-color: transparent;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,22 +42,17 @@ body {
   /* box-shadow: white 0.5px 0.5px 0.5px 0.5px; */
 }
 
-.menu-icon .line {
-  width: 100%;
-}
-
 .menu {
   display: flex;
   max-width: 400px;
   margin: 0 50px 0 20px;
 }
 
-
 /*side nav*/
 
 .sidenav {
   height: 7vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -130,7 +124,7 @@ body {
 section {
   margin-top: 0px;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -150,13 +144,12 @@ section {
   z-index: 10000;
 } */
 
-
 section img:nth-of-type(2) {
   opacity: 15%;
 }
 
 section:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -189,7 +182,7 @@ section img {
   text-align: center;
 }
 
-#text>small {
+#text > small {
   font-size: 34px;
   z-index: 1;
   font-weight: 300;
@@ -207,17 +200,23 @@ section img {
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 100vh;
-  margin-right: 20px;
-  margin-left: 20px;
-}
 
-.avatar {
-  margin: 5px;
+  width: 100%;
+  height: 100vh;
+}
+/* .left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
+  border: 1px solid black;
+} */
+
+.right-content {
+  padding: 30px;
 }
 
 .content-about-me {
@@ -248,11 +247,9 @@ a {
 }
 
 .content-text {
-  display: flex;
-  justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  text-align: left;
+  word-wrap: break-word;
 }
 
 i {
@@ -272,7 +269,7 @@ i:hover {
   flex-wrap: wrap;
   background: url(/img/parallax/underground.jpg);
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: white;
   margin-top: 4vh;
@@ -398,7 +395,7 @@ i:hover {
   #text {
     font-size: 70px;
   }
-  #text>small {
+  #text > small {
     font-size: 20px;
   }
 }
@@ -407,7 +404,7 @@ i:hover {
   #text {
     font-size: 46px;
   }
-  #text>small {
+  #text > small {
     font-size: 14px;
   }
   .sidenav {
@@ -438,7 +435,7 @@ i:hover {
     text-align: center;
     font-size: 32px;
   }
-  #text>small {
+  #text > small {
     text-align: center;
     font-size: 12px;
   }
@@ -449,6 +446,9 @@ i:hover {
   .menu-icon span {
     width: 25px;
   }
+  .avatar {
+    width: 200px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -456,7 +456,7 @@ i:hover {
     text-align: center;
     font-size: 24px;
   }
-  #text>small {
+  #text > small {
     text-align: center;
     font-size: 10px;
   }
